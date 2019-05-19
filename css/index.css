@@ -1,0 +1,31 @@
+#head {
+    background-color: chartreuse;
+}
+#main_nav {
+    background-color: cadetblue;
+}
+
+.main_bl {
+    background-color: darkgoldenrod;
+}
+
+#left_side {
+    background-color: darkseagreen;
+}
+.main_bl {
+    background-color: blue;
+}
+
+#right_anchor {
+    background-color: blueviolet;
+}
+
+.second_bl {
+    background-color: gold;
+}
+.main_card {
+    background-color: firebrick;
+}
+#footer {
+    background-color: chartreuse;
+}
