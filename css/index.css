@@ -1,31 +1,106 @@
 #head {
-    background-color: chartreuse;
+    position: absolute;
+    width: 1440px;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+    background-color: #7fff00;
 }
 #main_nav {
+    position: absolute;
+    width: 1440px;
+    height: 62px;
+    left: 0px;
+    top: 56px;
     background-color: cadetblue;
 }
 
 .main_bl {
+    position: absolute;
+    width: 1440px;
+    height: 781px;
+    left: 0px;
+    top: 118px;
     background-color: darkgoldenrod;
 }
 
 #left_side {
+    position: absolute;
+    width: 630px;
+    height: 781px;
+    left: 0px;
+    top: 118px;
     background-color: darkseagreen;
 }
-.main_bl {
-    background-color: blue;
+.link_bl{
+    width: 510px;
+    height: 88px;
+    background-color: darkslateblue;
+}
+#lk_link{
+    left: 120px;
+    top: 578px;
+}
+#guide_link{
+    left: 120px;
+    top: 682px;
+}
+#partner_link{
+    left: 120px;
+    top: 786px;
 }
 
 #right_anchor {
     background-color: blueviolet;
+    position: absolute;
+    width: 690px;
+    height: 296px;
+    left: 630px;
+    top: 578px;
 }
 
 .second_bl {
+    position: absolute;
+    width: 1440px;
+    height: 805px;
+    left: 0px;
+    top: 899px;
     background-color: gold;
 }
 .main_card {
+    width: 384px;
+    height: 312px;
     background-color: firebrick;
+}
+#card_1{
+    left: 120px;
+    top: 998px;
+}
+#card_2{
+    left: 528px;
+    top: 998px;
+}
+#card_3{
+    left: 936px;
+    top: 998px;
+}
+#card_4{
+    left: 120px;
+    top: 1335px;
+}
+#card_5{
+    left: 528px;
+    top: 1335px;
+}
+#card_6{
+    left: 936px;
+    top: 1335px;
 }
 #footer {
     background-color: chartreuse;
+    position: absolute;
+    width: 1440px;
+    height: 88px;
+    left: 0px;
+    top: 1704px;
 }
