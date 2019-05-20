@@ -25,38 +25,40 @@
 }
 
 #left_side {
-    position: absolute;
+    position: inherit;
     width: 630px;
     height: 781px;
     left: 0px;
-    top: 118px;
+    top: 0px;
     background-color: darkseagreen;
 }
 .link_bl{
+    position: inherit;
     width: 510px;
     height: 88px;
     background-color: darkslateblue;
 }
 #lk_link{
-    left: 120px;
-    top: 578px;
+    /*left: 120px;*/
+    top: 460px;
+    right: 0px;
 }
 #guide_link{
     left: 120px;
-    top: 682px;
+    top: 564px;
 }
 #partner_link{
     left: 120px;
-    top: 786px;
+    top: 668px;
 }
 
 #right_anchor {
     background-color: blueviolet;
-    position: absolute;
+    position: inherit;
     width: 690px;
     height: 296px;
     left: 630px;
-    top: 578px;
+    top: 460px;
 }
 
 .second_bl {
@@ -68,33 +70,34 @@
     background-color: gold;
 }
 .main_card {
+    position: inherit;
     width: 384px;
     height: 312px;
     background-color: firebrick;
 }
 #card_1{
     left: 120px;
-    top: 998px;
+    top: 99px;
 }
 #card_2{
     left: 528px;
-    top: 998px;
+    top: 99px;
 }
 #card_3{
     left: 936px;
-    top: 998px;
+    top: 99px;
 }
 #card_4{
     left: 120px;
-    top: 1335px;
+    top: 436px;
 }
 #card_5{
     left: 528px;
-    top: 1335px;
+    top: 436px;
 }
 #card_6{
     left: 936px;
-    top: 1335px;
+    top: 436px;
 }
 #footer {
     background-color: chartreuse;
