@@ -6,13 +6,13 @@
     top: 0px;
     background-color: #7fff00;
 }
-#main_nav {
+#main_nav { /*вторая строка навигации */
     position: absolute;
     width: 1440px;
     height: 62px;
     left: 0px;
     top: 56px;
-    background-color: cadetblue;
+    background-color:#3B1B10;
 }
 
 .main_bl {
@@ -21,7 +21,9 @@
     height: 781px;
     left: 0px;
     top: 118px;
-    background-color: darkgoldenrod;
+    background: url(/img/Photos/Main_fon_part_3_max_size.jpg); 
+    /*не грузится картинка */
+    background-color: darkgoldenrod; 
 }
 
 #left_side {
