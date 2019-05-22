@@ -34,7 +34,11 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: chartreuse;
+    background-size: inherit;
+    background-position: center;
+   
+    background-image: url(https://img3.badfon.ru/wallpaper/middle/f/63/ptica-sova-operenie.jpg)
+
 }
 
 .content{
