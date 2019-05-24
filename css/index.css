@@ -1,5 +1,15 @@
 body{
-    content: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;   
+
 }
 .left_field{
     background-color: #AF8373;
@@ -7,7 +17,7 @@ body{
 }
 .main{
     /*width: 1440px; */
-    flex: 10;
+    display: inline-block;
     background-color: rgb(16, 43, 59);
 }
 .right_field{
@@ -15,6 +25,8 @@ body{
     flex: 1;
 }
 #head {
+    /*border: none;
+    margin: 0; */
     position: inherit;
     width: 1440px;
     height: 56px;
