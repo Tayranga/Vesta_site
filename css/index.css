@@ -1,9 +1,15 @@
-h1{
+.left_field{
 
 }
+.main{
+    width: 1440px;
+    position: 
+}
+.right_field{
 
+}
 #head {
-    position: absolute;
+    position: inherit;
     width: 1440px;
     height: 56px;
     left: 0px;
@@ -11,7 +17,7 @@ h1{
     background-color: #7fff00;
 }
 #main_nav { /*вторая строка навигации */
-    position: absolute;
+    position: inherit;
     width: 1440px;
     height: 62px;
     left: 0px;
@@ -20,13 +26,14 @@ h1{
 }
 
 .main_bl {
-    position: absolute;
+    position: inherit;
     width: 1440px;
     height: 781px;
     left: 0px;
     top: 118px;
-    background: url(/img/Photos/Main_fon_part_3_max_size.jpg); 
-    /*не грузится картинка */
+    background: url(..//img/Photos/Main_fon_part_3_max_size.jpg); 
+    background-size: cover;
+    background-position: right;
     background-color: darkgoldenrod; 
 }
 
@@ -107,7 +114,7 @@ h1{
 }
 #footer {
     background-color: chartreuse;
-    position: absolute;
+    position: inherit;
     width: 1440px;
     height: 88px;
     left: 0px;
