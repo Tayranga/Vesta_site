@@ -1,7 +1,7 @@
 body{
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -17,7 +17,7 @@ body{
 }
 .main{
     /*width: 1440px; */
-    display: inline-block;
+    display: block;
     background-color: rgb(16, 43, 59);
 }
 .right_field{
