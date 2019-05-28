@@ -7,14 +7,15 @@ body{
     background-color: darkslategray;
 }
 main{
-    flex: 1;
+    flex: 1; 
     display: flex;
+    height: 80%;
 
 }
 .article{
     background-color: deepskyblue;
     flex: 1;
-    height: 80%;
+    
 }
 .nav, .aside{
     background-color: dimgray;
