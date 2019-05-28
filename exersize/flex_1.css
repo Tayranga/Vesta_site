@@ -20,3 +20,6 @@ main{
     background-color: dimgray;
     width: 30px;
 }
+.nav{
+    order: -1;
+}
