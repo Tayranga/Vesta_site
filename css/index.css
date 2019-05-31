@@ -142,7 +142,7 @@ body{
     display: flex;
     flex-direction: column; 
     justify-content: flex-start; 
-    margin: 0 120px;
+    padding: 0 120px;
 }
 
 .second_bl_article{
