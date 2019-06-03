@@ -95,10 +95,12 @@ h3{
     margin-right: 4px;
     
 }
-.lk{
+.lk_icon{
     width: 34px;
     min-height: 34px;
-    background-color: rgb(255, 0, 119);
+    margin-right: 120px;
+    margin-left: 48px;
+    /* background-color: rgb(255, 0, 119); */
 }
 
 .main_nav {
