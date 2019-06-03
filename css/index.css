@@ -106,7 +106,28 @@ h3{
 .main_nav {
     min-height: 62px;
     background-color:#3B1B10;
+    display: flex;
+    flex-direction: row;
 }
+.logo_block{
+    min-height: 62px;
+    min-width: 176px;
+    margin-left: 120px;
+    margin-right: 24px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 62px;
+    font-family: "Lato";
+    font-size: 38px;
+    font-weight: bold; 
+
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+
+}
+
 .main_bl {
     display: flex;
     flex-direction: row;
