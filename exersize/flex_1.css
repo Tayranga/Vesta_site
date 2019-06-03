@@ -1,0 +1,26 @@
+body{
+    display:flex;
+    flex-direction: column;
+}
+.head, .foot{
+    height: 100px;
+    background-color: darkslategray;
+}
+main{
+    flex: 1; 
+    display: flex;
+    height: 700px;
+
+}
+.article{
+    background-color: deepskyblue;
+    flex: 1;
+    
+}
+.nav, .aside{
+    background-color: dimgray;
+    width: 200px;
+}
+.nav{
+    order: -1;
+}

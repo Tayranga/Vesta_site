@@ -1,0 +1,89 @@
+
+
+.wrapper{
+
+    background-color: blueviolet;
+
+}
+
+.main_menu{
+    background-color: aqua;
+    height: 50px;
+}
+
+.menu{
+    display: table;
+    width: 100%;
+}
+
+.menu li{
+    display:table-cell;
+    list-style: none;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: inherit;
+    background-position: center;
+   
+    background-image: url(https://img3.badfon.ru/wallpaper/middle/f/63/ptica-sova-operenie.jpg)
+
+}
+
+.content{
+    display: flex;
+}
+
+.d-flex{
+    flex: 1;
+    height: 200px;
+    background-color: orange;
+    display: flex;
+}
+.col-1{
+    background-color: violet;
+    height: 200px;
+    flex:1;
+}
+.col-2{
+    background-color: greenyellow;
+    height: 200px;
+    flex:1;
+}
+.col-3{
+    background-color: mediumblue;
+    height: 200px;
+    flex:1;
+}
+.col{
+    margin: 0 10px;
+}
+.col:first-child{
+    margin-left: 0px;
+}
+.col:last-child{
+    margin-right: 0px;
+}
+
+.cen{
+    width: 100%;
+    height: 1500px;
+    background-color:#000000;
+    position: absolute;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 680 px){
+    .col-2{
+        background-color: crimson;
+    }
+}
+@media print {
+
+}
+.pp{
+    position: absolute;
+    top: 20px;
+
+}
