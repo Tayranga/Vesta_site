@@ -1,31 +1,5 @@
-@font-face{
-    font-family: 'Lato';
-    src: url('../font/lato-medium-webfont.woff') format('woff'),
-    url('../font/lato-medium-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face{
-    font-family: 'Lato';
-    src: url('../font/lato-mediumitalic-webfont.woff') format('woff'),
-    url('../font/lato-mediumitalic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}    
-@font-face{
-    font-family: 'Lato';
-    src: url('../font/lato-heavy-webfont.woff') format('woff'),
-    url('../font/lato-heavy-webfont.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face{
-    font-family: 'Lato';
-    src: url('../font/lato-heavyitalic-webfont.woff') format('woff'),
-    url('../font/lato-heavyitalic-webfont.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
+@import "//fonts.fontstorage.com/import/lato.css";
+
 body{
     width: 100%;
     height: 100%;
