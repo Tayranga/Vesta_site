@@ -143,8 +143,10 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-}.second_bl_article h2{
+}
+.second_bl_article h2{
     /* padding-left: 120px; */
+    color: #3B1B10;
 }
 .link_text{
     display: flex;
