@@ -40,23 +40,17 @@ h3{
     min-height: 48px;
     line-height: 48px;
 }
+.button_main:hover{
+    border: 2px solid rgba(59, 27, 16, 0.7);
+    color: rgba(59, 27, 16, 0.7);
+}
 
-/* .left_field{
-    background-color: white;
-    flex: 1;
-} */
 .main{
-    /*width: 1440px; */
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    /* background-color: rgb(16, 43, 59); */
     flex: 14;    
 }
-/* .right_field{
-    background-color: white;
-    flex: 1;
-} */
 
 .main_head {
     min-height: 56px;
@@ -108,24 +102,53 @@ h3{
     background-color:#3B1B10;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .logo_block{
     min-height: 62px;
     min-width: 176px;
     margin-left: 120px;
-    margin-right: 24px;
+    margin-right: 12px;
     color: #ffffff;
     text-align: left;
     line-height: 62px;
     font-family: "Lato";
     font-size: 38px;
     font-weight: bold; 
+    letter-spacing: 5px;
 
 }
 .navigation{
-    display: flex;
+    display: table;
     flex-direction: row;
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 0px;
 
+
+}
+.navigation li{
+    display:table-cell;
+    list-style: none;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.navigation a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+.navigation a:hover{
+    color: #AF8373;
+}
+.navigation a:focus{
+    color: #AF8373;
+    border-radius: 4px;
+    border: 1px solid #AF8373; 
+}
+.navigation a:disabled{
+    color: rgba(175, 131, 115, 0.5);
 }
 
 .main_bl {
