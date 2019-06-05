@@ -10,23 +10,56 @@ body{
     overflow: auto;
     font-family: "Lato";
     background-color: white;   
+    
 }
 
 h1{
     font-family: "Lato";
     font-size: 46px;
     font-weight: bold;
+    line-height: 56px;
 }
 h2{
     font-family: "Lato";
     font-size: 32px;
     font-weight: bold;
+    line-height: 40px;
 }
 h3{
     font-family: "Lato";
     font-size: 24px;
     font-weight: bold;
+    line-height: 32px;
 }
+.lead{
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
+}
+.p_m{
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+}
+.p_s{
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.link_text{
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+    text-decoration: none;
+}
+.white_text{
+    color: #ffffff;
+}
+
 .button_main{
     font-family: "Lato";
     font-size: 18px;
@@ -225,7 +258,7 @@ h3{
 
 .second_bl {
     height: 805px;
-    background-color: #AF8373;
+    background-color: #D7C1B9;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start; 
@@ -233,7 +266,7 @@ h3{
 }
 
 .second_bl_article{
-    background-color: #AF8373;
+    /* background-color: #D7C1B9; */
     /* flex: 1 1 auto; */
     height: 100px;
     display: flex;
@@ -245,14 +278,15 @@ h3{
     /* padding-left: 120px; */
     color: #3B1B10;
 }
-.link_text{
+.graph_link{
     display: flex;
     flex-direction: row;
     align-content: baseline;
 }
-.link_text img{
+.graph_link img{
     height: 24px;
     width: 24px;
+    color: #ffffff;
 
 }
 .second_bl_cards{
@@ -277,9 +311,20 @@ h3{
     height: 312px; */
     flex: 1 1 30%;
     margin: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
 }
+.card_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9%;
+}
+
 .cards_row_1 .main_card{
     margin-top: 0px;
 }
