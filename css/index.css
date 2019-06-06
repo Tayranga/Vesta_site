@@ -1,12 +1,16 @@
 @import "//fonts.fontstorage.com/import/lato.css";
+/* жирность шрифта - medium - 500, heavy - 800 */
 
+* {
+    box-sizing: border-box;
+}
 body{
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     overflow: auto;
     font-family: "Lato";
     background-color: white;   
@@ -17,7 +21,7 @@ body{
 h1{
     font-family: "Lato";
     font-size: 46px;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 56px;
     margin-block-start: 0.67em;
     margin-block-end: 0.40em;
@@ -25,39 +29,39 @@ h1{
 h2{
     font-family: "Lato";
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 40px;
 }
 h3{
     font-family: "Lato";
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 32px;
     margin-block-end: 0em;
 }
 .lead{
     font-family: "Lato";
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 32px;
 }
 .p_m{
     font-family: "Lato";
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 26px;
 }
 .p_s{
     font-family: "Lato";
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 20px;
     margin-block-end: 0em;
 }
 .link_text{
     font-family: "Lato";
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 26px;
     text-decoration: none;
 }
@@ -81,7 +85,7 @@ h3{
 .button_main{
     font-family: "Lato";
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 800;
     text-decoration: none;
     color: #3B1B10;
     border-radius: 4px;
@@ -96,34 +100,37 @@ h3{
     color: rgba(59, 27, 16, 0.7);
 }
 
-.main{
+.flex-container{
+    display: flex;    
+}
+/* .main{
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     flex: 14;    
-}
+} */
 
 .main_head {
     min-height: 56px;
     background-color: #ffffff;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+.main_head_left{
+    align-items: center;
+}
 .tel_disp{
     width: 286px;
-    min-height: 56px;
-    padding-left: 120px;
+    /* min-height: 56px; */
+    margin-left: 120px;
     color: #3B1B10;
 }
 .master_call{
     width: 177px;
-    min-height: 48px;
+    height: 48px;
 }
-.head_empty{
-    flex-grow: 2;
-    background-color: rgb(255, 115, 0);
-}
+
 .search{
     width: 282px;
     min-height: 30px;
@@ -152,7 +159,6 @@ h3{
     min-height: 62px;
     background-color:#3B1B10;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .logo_block{
@@ -165,7 +171,7 @@ h3{
     line-height: 62px;
     font-family: "Lato";
     font-size: 38px;
-    font-weight: bold; 
+    font-weight: 800;
     letter-spacing: 5px;
 
 }
@@ -175,12 +181,12 @@ h3{
     color: #ffffff;
     font-family: "Lato";
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 800;
     padding-left: 0px;
 
 
 }
-.navigation li{
+.navigation a{
     align-items: center;
     list-style: none;
     padding-right: 12px;
@@ -205,18 +211,18 @@ h3{
 .main_bl {
     display: flex;
     flex-direction: row;
-    height: 781px;
+    min-height: 781px;
     /* background-color: rgb(0, 124, 133);  */
     background: url(..//img/Photos/Main_fon_part_3_max_size.jpg); 
     background-size: cover;
     background-position: right;
 }
 .left_side {
-    height: 781px;
-    flex: 1 1 50%;
+    min-height: 781px;
+    flex: 4;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     
 }
 .main_sentence{
@@ -253,16 +259,15 @@ h3{
 }
 
 .right_side{
-    height: 781px;
-    flex: 1 1 50%;
+    min-height: 781px;
+    flex: 5;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     
-    /* background-color: rgba(30, 50, 50, 0.5) */
+    
 }
 .right_anchor{
-    /* background-color: rgba(137, 43, 226, 0.5); */
     height: 131px;
     flex-grow: 1;
     margin-bottom: 30px;
@@ -321,7 +326,7 @@ h3{
     /* justify-content: space-between; */
 }
 .cards_row_1, .cards_row_2{
-    flex: 1 1 50%;  
+    /* flex: 1 1 50%;   */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -329,22 +334,24 @@ h3{
 
 
 .main_card {
-    /* width: 384px;
-    height: 312px; */
-    flex: 1 1 30%;
+    /*  */
+    /* flex: 1 1 30%; */
+    max-width: 384px;
+    min-height: 312px;
     margin: 12px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     padding-left: 16px;
+    padding-bottom: 9%;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 .card_title{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 9%;
 }
 
 .cards_row_1 .main_card{
@@ -354,37 +361,25 @@ h3{
 .main_card img{
     height: 120px;
     width: 120px;
-    margin-right: 20px;
-    margin-top: 20px;
+    
 }
 
 #card_1{
-    
-    /* left: 120px;
-    top: 99px; */
     margin-left: 0px;
 }
-#card_2{
-    /* left: 528px;
-    top: 99px; */
-}
+/* #card_2{
+
+} */
 #card_3{
-    /* left: 936px;
-    top: 99px; */
     margin-right: 0px;
 }
 #card_4{
     margin-left: 0px;
-    /* left: 120px;
-    top: 436px; */
 }
-#card_5{
-    /* left: 528px;
-    top: 436px; */
-}
+/* #card_5{
+
+} */
 #card_6{
-    /* left: 936px;
-    top: 436px; */
     margin-right: 0px;
 }
 
