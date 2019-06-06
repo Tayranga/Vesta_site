@@ -1,4 +1,4 @@
-@import "//fonts.fontstorage.com/import/lato.css";
+@import "http://fonts.fontstorage.com/import/lato.css";
 /* жирность шрифта - medium - 500, heavy - 800 */
 
 * {
@@ -412,6 +412,6 @@ h3{
 .footer_right img:last-child{
     margin-right: 0;
 }
-.footer-left a:first-child{
+.footer_left a:first-child{
     padding-left: 0;
 }
