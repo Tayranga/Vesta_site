@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -20,20 +21,28 @@ header .container{
     background-color: #ff6400;
     height: 70px;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 .head_right_part, .head_left_part p{
     margin: 3px 0;
 }
+.headline{
+    font-size: 18px;
+    padding-top: 5px;
+}
 .subtitle p{
     margin-right: 10px;
+    font-size: 12px;
+    color: #FFC55B;
 }
 
 .main {
+    overflow-y: auto;
     height: 600px;
     background-color: #A64100;
     max-width: 800px;
     margin: 0 auto;
+    
 }
 .whole_message{
     align-items: center;
@@ -43,6 +52,16 @@ header .container{
     align-items: center;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.right_part{
+    padding: 3px;
+    margin: 0 8px ;
+}
+.line{
+    width: 2px;
+    background-color: #ff6400;
+    height: 100%;
 }
 .circle{
     border-radius: 50%;
@@ -50,16 +69,19 @@ header .container{
     width: 50px;
     height: 50px;
     margin-left: 25px;
-    font-size: 20px;
+    
+}
+.left_part p{
+    font-size: 12px;
+    margin-left: 3px;
 }
 .circle p{
+    font-size: 20px;
     text-align: center;
-    line-height: 50%;
+    line-height: 50px;
+    margin: 0;
 }
-.right_part{
-    padding: 3px;
-    margin: 0 8px ;
-}
+
 .message{
     background-color: #DB5400;
     padding: 5px;
