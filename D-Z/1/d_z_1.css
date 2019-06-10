@@ -47,12 +47,20 @@ header .container{
 }
 
 .main {
+    position: relative;
     overflow-y: auto;
     /* height: 600px; */
-    background-color: #A64100;
-    /* max-width: 800px; */
+    background-color: #A64100;    
     margin: 0 auto;
     
+}
+.line{
+    position: absolute;
+    left: 150px;
+    /* top: 70px; */
+    height: 100%;
+    width: 1px;
+    background-color: #FFC55B;
 }
 .whole_message{
     align-items: center;
@@ -68,11 +76,11 @@ header .container{
     padding: 3px;
     margin: 0 8px ;
 }
-.line{
+/* .line{
     width: 2px;
     background-color: #ff6400;
     height: 100%;
-}
+} */
 .circle{
     border-radius: 50%;
     background-color: #FFC55B;
