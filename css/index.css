@@ -31,6 +31,7 @@ h2{
     font-size: 32px;
     font-weight: 800;
     line-height: 40px;
+    margin: 0;
 }
 h3{
     font-family: "Lato";
@@ -38,6 +39,7 @@ h3{
     font-weight: 800;
     line-height: 32px;
     margin-block-end: 0em;
+    margin: 0;
 }
 .lead{
     font-family: "Lato";
@@ -319,29 +321,29 @@ h3{
     color: #ffffff;
 
 }
-.second_bl_cards{
-    /* background-color: rgba(43, 168, 226, 0.5); */
-    /* flex: 7 1 auto; */
-    height: 705px;
+/* .second_bl_cards{
     display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: center;
+} */
+.card_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    width: 384px;
 }
-.cards_row_1, .cards_row_2{
-    /* flex: 1 1 50%;   */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media  (min-width: 1600px){
+    .card_container{
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        /* gap: 12px;    */
+    }
 }
-
 
 .main_card {
     /*  */
-    flex: 1 1 30%;
-    max-width: 384px;
+    /* flex: 1 1 30%;
+    max-width: 384px; */
     min-height: 312px;
-    margin: 12px;
+    /* margin: 12px; */
     background-color: rgba(255, 255, 255, 1);
     border-radius: 4px;
     display: flex;
@@ -354,9 +356,9 @@ h3{
     align-items: center;
 }
 
-.cards_row_1 .main_card{
+/* .cards_row_1 .main_card{
     margin-top: 0px;
-}
+} */
 
 .main_card img{
     height: 120px;
@@ -364,30 +366,12 @@ h3{
     
 }
 
-#card_1{
-    margin-left: 0px;
-}
-/* #card_2{
-
-} */
-#card_3{
-    margin-right: 0px;
-}
-#card_4{
-    margin-left: 0px;
-}
-/* #card_5{
-
-} */
-#card_6{
-    margin-right: 0px;
-}
-
 .footer {
     background-color:#3B1B10;
     height: 88px;
     justify-content: space-between;
     align-items: center;
+    /* padding-top: 8px; */
 }
 .footer_left{
     margin-left: 120px;
@@ -401,9 +385,11 @@ h3{
 .sosial_links{
     align-items: center;
 }
-.footer_right .tel_disp{
+.footer_right .tel_disp,p{
     margin: 0;
+    line-height: 26px;
 }
+
 .footer_right img{
     width: 22px;
     height: 22px;
