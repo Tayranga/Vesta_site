@@ -1,75 +1,84 @@
-body{
-    margin: 0 auto;
+/*   COMMON STYLES   */
+
+body {
+    margin: 0;
     font-size: 14px;
 }
-button{
+
+button {
     cursor: pointer;
     box-shadow: none;
     outline: none;
 }
-.green-button{
+
+.green-button {
     width: 170px;
     height: 55px;
     line-height: 55px;
     text-align: center;
     background-color: #A0D334;
     color: white;
+    border: none;
 }
-.green-button:hover{
-    background-color: rgba(146, 194, 43, 0.808);
+
+.green-button:hover {
+    background-color: rgb(167, 224, 44);
 }
+
 * {
     box-sizing: border-box;
 }
-h2{
-    font-weight: 700x;    
-    color: #4A4A4A;
+
+h2 {
+    font-weight: 700;
+    color: #4a4a4a;
     font-size: 30px;
     line-height: 27px;
 }
-h3{
-    color: #4A4A4A;
+
+h3 {
     font-weight: 500;
+    color: #4A4A4A;
     font-size: 16px;
     line-height: 27px;
     margin: 0;
 }
 
-/*END OF COMMON STYLES*/
-/* FONTS*/
-.roboto-regular{
-    font-family: 'roboto', sans-serif;
+/*  END OF COMMON STYLES   */
+
+/*   FONTS   */
+.roboto-regular {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-.roboto-medium{
-    font-family: 'roboto', sans-serif;
-    font-weight: 500;
-}
-.roboto-bold{
-    font-family: 'roboto', sans-serif;
-    font-weight: 700;
-}
-.montserrat-semi-bold{
-    font-family: 'montserrat', sans-serif;
+
+.montserrat-semi-bold {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-/*END OF FONTS */
 
-.flex-container{
-    display: flex;
-    
+/*  END OF FONTS  */
+
+.roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
-.container{
+
+.flex-container {
+    display: flex;
+}
+
+.container {
     max-width: 1170px;
     margin: 0 auto;
-    display: flex;
 }
-.logo-name{
+
+.logo-name {
     font-size: 28px;
     color: #A0D334;
-
 }
-header{
+
+header {
     position: fixed;
     height: 55px;
     top: 23px;
@@ -77,20 +86,24 @@ header{
     right: 0;
     z-index: 1;
 }
-header .container{
+
+header .container {
     justify-content: space-between;
     align-items: center;
 }
+
 header a {
     margin-right: 46px;
     font-size: 14px;
     text-decoration: unset;
     color: white;
 }
-header a:last-child{
+
+header a:last-child {
     margin-right: 0;
-} 
-.header-button{
+}
+
+.header-button {
     color: white;
     height: 55px;
     width: 170px;
@@ -100,51 +113,58 @@ header a:last-child{
     font-size: 14px;
     background-color: transparent;
 }
-.header-button:hover{
-    background-color: rgba(255, 255, 255, .3);
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, .2);
 }
 
-.first_section{
-    background-image: none; 
-    /* need image */
+.first-section {
     height: 900px;
-    background: linear-gradient(90deg, #7A39DB99, #6048FF99);
+    background-image: none;  /*  find image for it   */
+    background: linear-gradient(#7A39DB99, #6048FF99);    
 }
-.first_section .container{
+
+.first-section .container {
     height: 100%;
     position: relative;
 }
-.first_section .about-me{
+
+.first-section .about-me {
     position: absolute;
     top: 30%;
     right: 129px;
     color: white;
 }
-.first_section .small-text{
+
+.first-section .small-text {
     font-size: 20px;
     line-height: 26px;
 }
-.first_section .big-text{
+
+.first-section .big-text {
     font-size: 60px;
     margin-top: -8px;
-    margin-left: -4px;
-    margin-bottom: -8px;
-
+    margin-left: -3px;
+    margin-bottom: -6px;
 }
-.first_section .green-button{
+
+.first-section .green-button {
     margin-top: 60px;
 }
-.my-services .container{
+
+.my-services .container {
     align-items: center;
 }
-.my-services .service-cards{
+
+.my-services .service-cards {
     display: grid;
     grid-template-columns: 338px 338px;
     gap: 30px;
 }
-.my-services .services-info p{
+
+.my-services .services-info p {
     line-height: 27px;
-    color: #6E6E6E;
+    color: #6e6e6e;
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -154,28 +174,25 @@ header a:last-child{
     box-shadow: 0 0 30px rgba(172, 172, 172, .16);
     padding: 30px;
 }
-.service-card .service-card-img{
-    flex: 0 0 50px;
-}
-.my-services .service-card-img-and-header{
+
+.my-services .service-card-img-and-header {
     align-items: center;
 }
-.my-services .service-card-img-and-header img{
+
+.service-card .service-card-img-and-header img {
     flex: 0 0 35px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
-.service-card .service-card-info{
-    
-}
-.service-card img{
-    border: 1px solid black;
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-}
-.service-card-info p{
+
+.service-card .service-card-info {
+    margin: 10px 0 0 55px;
     color: #6E6E6E;
     line-height: 27px;
-    margin-top: 16px;
-    margin-bottom: 0;
+}
+
+.service-card img {
+    border: 1px solid black;
+    height: 34px;
+    width: 35px;
+    display: inline-block;
 }
