@@ -16,6 +16,7 @@ body{
     font-family: "Lato";
     background-color: white;   
     margin: 0;
+    text-decoration: none;
     
 }
 
@@ -86,6 +87,16 @@ h3{
 }
 .margin_40{
     margin: 0 120px;
+}
+.graph_link{
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+}
+.graph_link img{
+    height: 24px;
+    width: 24px;
+    color: #ffffff;
 }
 /* END OF COMMON STYLES */
 
@@ -308,17 +319,8 @@ h3{
     /* padding-left: 120px; */
     color: #3B1B10;
 }
-.graph_link{
-    display: flex;
-    flex-direction: row;
-    align-content: baseline;
-}
-.graph_link img{
-    height: 24px;
-    width: 24px;
-    color: #ffffff;
 
-}
+
 .card_container{
     display: grid;
     grid-template-columns: 384px 384px 384px;

@@ -78,13 +78,12 @@ section{
     margin: 12px 0 0 0;
 }
 .right_part{
-    width: 100%;
+    flex-grow: 1;
     padding: 0 10px;
     border-left: 1px solid #FFC55B;
     flex-direction: column;    
 }
 .message{
-    flex-grow: 1;
     background-color: #DB5400;
     padding: 10px;
     margin: 10px 0px;
