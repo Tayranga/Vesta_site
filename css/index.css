@@ -1,6 +1,7 @@
 @import "http://fonts.fontstorage.com/import/lato.css";
 /* жирность шрифта - medium - 500, heavy - 800 */
 
+/* COMMON STYLES */
 * {
     box-sizing: border-box;
 }
@@ -86,6 +87,7 @@ h3{
 .margin_40{
     margin: 0 120px;
 }
+/* END OF COMMON STYLES */
 
 .button_main{
     font-family: "Lato";
@@ -104,16 +106,9 @@ h3{
     border: 2px solid rgba(59, 27, 16, 0.7);
     color: rgba(59, 27, 16, 0.7);
 }
-
 .flex-container{
     display: flex;    
 }
-/* .main{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    flex: 14;    
-} */
 
 .main_head {
     min-height: 56px;
@@ -121,6 +116,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 .main_head_left{
     align-items: center;
@@ -188,6 +184,8 @@ h3{
     font-size: 16px;
     font-weight: 800;
     padding-left: 0px;
+    flex-wrap: wrap;
+    
 
 
 }
@@ -289,12 +287,12 @@ h3{
 }
 
 .second_bl {
-    height: 805px;
+    /* height: 805px; */
     background-color: #D7C1B9;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start; 
-    padding: 0 120px;
+    padding: 0 120px 56px 120px;
 }
 
 .second_bl_article{
@@ -321,28 +319,27 @@ h3{
     color: #ffffff;
 
 }
-/* .second_bl_cards{
-    display: flex;
-    justify-content: center;
-} */
 .card_container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 384px 384px 384px;
     gap: 24px;
-    width: 384px;
+    /* width: 384px; */
 }
 @media  (min-width: 1600px){
     .card_container{
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        /* gap: 12px;    */
+        grid-template-columns: 384px 384px 384px 384px; 
+        gap: 12px;   
+    }
+}
+@media  (max-width: 1100px){
+    .card_container{
+        grid-template-columns: 384px 384px; 
+        gap: 12px;   
     }
 }
 
 .main_card {
-    /* flex: 1 1 30%;
-    max-width: 384px; */
     min-height: 312px;
-    /* margin: 12px; */
     background-color: rgba(255, 255, 255, 1);
     border-radius: 4px;
     display: flex;
@@ -354,17 +351,15 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
-
-/* .cards_row_1 .main_card{
-    margin-top: 0px;
-} */
-
+.card_title h3{
+    margin-top: -35px;
+}
 .main_card img{
     height: 120px;
     width: 120px;
+    margin-bottom: 38px;
     
 }
-
 .footer {
     background-color:#3B1B10;
     height: 88px;
@@ -388,7 +383,6 @@ h3{
     margin: 0;
     line-height: 26px;
 }
-
 .footer_right img{
     width: 22px;
     height: 22px;
