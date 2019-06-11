@@ -60,12 +60,6 @@ section{
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
-.right_part{
-    padding: 0 10px;
-    border-left: 1px solid #FFC55B;
-    flex-direction: column;
-}
-
 .circle{
     border-radius: 50%;
     background-color: #FFC55B;
@@ -80,14 +74,20 @@ section{
     font-size: 12px;
     margin-left: 3px;
 }
-
 .author_name{
     margin: 12px 0 0 0;
 }
+.right_part{
+    width: 100%;
+    padding: 0 10px;
+    border-left: 1px solid #FFC55B;
+    flex-direction: column;    
+}
 .message{
+    flex-grow: 1;
     background-color: #DB5400;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0px;
     min-height: 20px;
-    line-height: 18px;
+    line-height: 22px;
 }
