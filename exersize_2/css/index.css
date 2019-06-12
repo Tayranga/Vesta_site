@@ -119,14 +119,25 @@ header a:last-child {
 }
 
 .first-section {
+    position: relative;
     height: 900px;
-    background-image: none;  /*  find image for it   */
-    background: linear-gradient(#7A39DB99, #6048FF99);    
+    background-image: url(section1_back.png);  /*  find image for it   */
+    /* background: linear-gradient(#7A39DB99, #6048FF99);     */
+}
+.first-section .bacground-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#7A39DB99, #6048FF99);
+
 }
 
 .first-section .container {
     height: 100%;
     position: relative;
+    z-index: 1;
 }
 
 .first-section .about-me {
