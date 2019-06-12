@@ -121,16 +121,17 @@ header a:last-child {
 .first-section {
     position: relative;
     height: 900px;
-    background-image: url(section1_back.png);  /*  find image for it   */
+    background-image: url(/exersize_2/assets/section1_back.png);  /*  find image for it   */
     /* background: linear-gradient(#7A39DB99, #6048FF99);     */
+    background-position-x: center;
 }
-.first-section .bacground-layer{
+.bacground-layer{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#7A39DB99, #6048FF99);
+    background: linear-gradient(90deg, #7A39DB99, #6048FF99);
 
 }
 
@@ -207,3 +208,33 @@ header a:last-child {
     width: 35px;
     display: inline-block;
 }
+/* MY STORY */
+.my-story{
+    justify-content: center;
+    align-items: center;
+    height: 875px;
+    position: relative;
+    background-image: url(/exersize_2/assets/my-story-back.png);
+    background-position-x: center;
+    background-position-y: -66px;
+}
+.story-button-container{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.my-story .story-button{
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    margin-bottom: 36px;
+}
+.my-story .button-label{
+    font-weight:  bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: white;
+}
+/* END OF MY STORY */
