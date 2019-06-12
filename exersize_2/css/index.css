@@ -249,6 +249,9 @@ header a:last-child {
 /* END OF MY STORY */
 
 /*  MY SKILLS */
+.my-skills{
+    padding-bottom: 68px;
+}
 .my-skills .container{
     text-align: center;
     padding-top: 5px;
@@ -267,6 +270,10 @@ header a:last-child {
     height: 170px;
     border: 1px solid;
     padding-top: 10px;
+}
+.skill-item .chart.right-aligned{
+    text-align: right;
+    padding-right: 10px;
 }
 .skill-item .chart-back{
     width: 260px;
@@ -290,5 +297,59 @@ header a:last-child {
     color: #4A4A4A;
     margin-top: 20px;
     font-size: 16px;
+    line-height: 27px;
 }
+
 /* END OF MY SKILLS */
+
+/* END OF MY PORTFOLIO */
+.my-portfolio{
+    background-color: #fafafa;
+    padding: 220px 0 288px 0;
+}
+.my-portfolio .container{
+    text-align: center;
+}
+.my-portfolio p{
+    margin: 20px 0 45px 0;
+    color: #4A4A4A;
+    line-height: 27px;
+}
+.my-portfolio .tab-item{
+    font-weight: 500;
+    line-height: 27px;
+    font-size: 16px;
+    margin-right: 27px;
+    color: #4A4A4A;
+}
+.my-portfolio .tab-item:last-child{
+    margin-right: 0;
+    
+}
+.my-portfolio .tab-item.active{
+    color: #A0D334;
+    position: relative;
+}
+.my-portfolio .tab-item.active:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 43px;
+    height: 1px;
+    background-color: #A0D334;
+    left: 0;
+    bottom: -4px;
+}
+.my-portfolio .tab-content{
+
+}
+.my-portfolio .web-design-content{
+    display: grid;
+    grid-template-columns: repeat(3 370px);
+    gap: 30px;
+    grid-template-rows: 250px 120px 250px;
+}
+.my-portfolio .grid-item{
+    background-color: red;
+}
+/* END OF MY PORTFOLIO  */
