@@ -134,7 +134,9 @@ header a:last-child {
     background: linear-gradient(90deg, #7A39DB99, #6048FF99);
 
 }
-
+.my-services{
+    padding: 33px 0 71px 0;
+}
 .first-section .container {
     height: 100%;
     position: relative;
@@ -230,6 +232,9 @@ header a:last-child {
     border: 1px solid #707070;
     border-radius: 50%;
     margin-bottom: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .my-story .button-label{
     font-weight:  bold;
@@ -237,4 +242,53 @@ header a:last-child {
     line-height: 37px;
     color: white;
 }
+.story-button img{
+    position: relative;
+    left: 3px;
+}
 /* END OF MY STORY */
+
+/*  MY SKILLS */
+.my-skills .container{
+    text-align: center;
+    padding-top: 5px;
+}
+.my-skills p{
+    margin: 20px 0 60px 0;
+    color: #4A4A4A;
+    line-height: 27px;
+}
+.skills-container{
+    justify-content: space-between;
+}
+.skill-item .chart{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border: 1px solid;
+    padding-top: 10px;
+}
+.skill-item .chart-back{
+    width: 260px;
+    height: 230px;
+    background-image: url(assets/chart-back.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.skill-item .chart-value{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 34px;
+    font-weight: bold;
+}
+.skill-item .skill-text{
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-top: 20px;
+    font-size: 16px;
+}
+/* END OF MY SKILLS */
