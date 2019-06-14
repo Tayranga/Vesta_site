@@ -41,7 +41,7 @@ h3 {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1034px;
     margin: 0 auto;
 }
 .min-container{
@@ -88,6 +88,41 @@ header{
 
 nav{
     justify-content: space-between;
-    margin-bottom: 70px;
 }
 /*  END OF HEADER */
+
+/* PRODUCT CARDS */
+.tab_content{
+    display: grid;
+    grid-template-columns: 236px 236px 236px  236px;
+    gap: 30px;
+    grid-template-rows: 300px 300px;
+    margin-top: 70px;
+}
+
+.tab_content .grid-item{
+    flex-direction: column;
+    background-color: rgb(220, 242, 255);
+}
+.grid-item .item-photo{
+    flex-grow: 1;
+}
+.grid-item .item-text{
+    min-height: 38px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 38px;
+}
+
+.item-name{
+    flex-grow: 1;
+    background-color: rgb(43, 43, 43);
+    text-align: left;
+    padding-left: 10px;
+}
+.item-price{
+    min-width: 45px;
+    background-color: rgb(109, 109, 109);
+    text-align: center;
+}
+/* END OF PRODUCT CARDS */
