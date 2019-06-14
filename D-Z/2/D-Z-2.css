@@ -48,6 +48,7 @@ h3 {
     max-width: 430px;
     margin: 0 auto;
 }
+
 /*  END OF COMMON STYLES   */
 
 /*   FONTS   */
@@ -103,6 +104,7 @@ nav{
 .tab_content .grid-item{
     flex-direction: column;
     background-color: rgb(220, 242, 255);
+    position: relative;
 }
 .grid-item .item-photo{
     flex-grow: 1;
@@ -125,4 +127,35 @@ nav{
     background-color: rgb(109, 109, 109);
     text-align: center;
 }
+/* .grid-item .actions{
+    position: absolute;
+    padding: 6px;
+    left: 0;
+    top: 0;
+    width: 236px;
+} */
+.grid-item .tab{
+    width: 50px;
+    height: 26px;
+    padding: 0 3px 0 3px;;
+    border: 1px solid #4A4A4A;
+    line-height: 26px;
+    text-align: center;
+    display: inline-block;
+}
+.grid-item .new{
+    position: absolute;
+    top: 6px;
+    left: 6px;    
+}
+.grid-item .sale{
+    position: absolute;
+    top: 6px;
+    right: 6px;    
+}
+
 /* END OF PRODUCT CARDS */
+
+.invis{
+    display: none;
+}
