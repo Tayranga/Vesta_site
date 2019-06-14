@@ -48,6 +48,13 @@ h3 {
     max-width: 430px;
     margin: 0 auto;
 }
+.pole_button{
+    border: 2px solid #ffffffa8;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 18px;
+}
 
 /*  END OF COMMON STYLES   */
 
@@ -127,35 +134,70 @@ nav{
     background-color: rgb(109, 109, 109);
     text-align: center;
 }
-/* .grid-item .actions{
+.grid-item .actions{
     position: absolute;
+    justify-content: space-between;
     padding: 6px;
     left: 0;
     top: 0;
     width: 236px;
-} */
-.grid-item .tab{
-    width: 50px;
+}
+.actions .tab{
     height: 26px;
     padding: 0 3px 0 3px;;
     border: 1px solid #4A4A4A;
     line-height: 26px;
     text-align: center;
-    display: inline-block;
 }
-.grid-item .new{
-    position: absolute;
-    top: 6px;
-    left: 6px;    
-}
-.grid-item .sale{
-    position: absolute;
-    top: 6px;
-    right: 6px;    
-}
-
-/* END OF PRODUCT CARDS */
 
 .invis{
-    display: none;
+    opacity: 0;
 }
+
+.hover-block{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 262px;
+    border: 6px solid  rgb(220, 242, 255);
+    background-color: rgba(74, 74, 74, 0.466);
+    display: grid;
+    grid-template-columns: 50px 40px 40px 40px 50px;
+    gap: 4px;
+    grid-template-rows: 85px 40px 40px 85px;
+    opacity: 0;
+}
+.hover-block:hover{
+    opacity: .8;
+}
+.hover-block .like{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.hover-block .mix{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.hover-block .clock{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.hover-block .add-to-cart{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.add-to-cart span{
+    font-size: 10px;
+    line-height: 40px;
+}
+/* END OF PRODUCT CARDS */
+

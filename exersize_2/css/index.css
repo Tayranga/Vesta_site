@@ -340,9 +340,7 @@ header a:last-child {
     left: 0;
     bottom: -4px;
 }
-.my-portfolio .tab-content{
 
-}
 .my-portfolio .web-design-content{
     display: grid;
     grid-template-columns: repeat(3 370px);
