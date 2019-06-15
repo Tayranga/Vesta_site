@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-size: 14px;
+    max-width: 1920px;
 }
 
 button {
@@ -219,6 +220,34 @@ header a:last-child {
     background-image: url(/exersize_2/assets/my-story-back.png);
     background-position-x: center;
     background-position-y: -66px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.my-story:before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    display: block;
+    transform: translateX(-50%) translateY(-50%) rotateZ(-7deg);
+    left: 50%;
+    top: 0;
+    width: 120%;
+    height: 250px;
+    z-index: 2;
+}
+.my-story:after{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    display: block;
+    transform: translateX(-50%) translateY(50%) rotateZ(-7deg);
+    left: 50%;
+    bottom: 0;
+    width: 120%;
+    height: 250px;
+    z-index: 2;
 }
 .story-button-container{
     text-align: center;
@@ -387,18 +416,90 @@ header a:last-child {
 /*   END OF MY PORTFOLIO   */
 
 /* MY CLIENTS */
-.clients-say {
-    background-color: #FAFAFF;
-    padding-top: 220px;
-    padding-bottom: 288px;
-}
 .clients-say .container {
     text-align: center;
+    
+}
+.clients-say .section-description {
+    margin: 20px 0 0 0;
+    color: #4a4a4a;
+    line-height: 27px;
+}
+.clients-say .responses-wrapper-wrapper{
+    padding-top: 64px;
+    padding-bottom: 175px;
+    position: relative;
+}
+.clients-say .responses-wrapper{
+    overflow: hidden;
+    padding-top: 64px;
+    padding-bottom: 175px;
+}
+.clients-say .responses-container{
+    transform: all 7s;
 }
 
-.clients-say p {
-    margin: 20px 0 45px 0;
+.clients-say .response-item{
+    width: 370px;
+    height: 222px;
     color: #4A4A4A;
-    line-height: 27px;
+    padding: 30px 30px 35px 30px;
+    box-shadow: 0 0 30px rgba(172, 172, 172, .16) ;
+    margin: 0; 
+    flex-shrink: 0;
+}
+.clients-say .response-item p{
+    line-height: 19px;
+    text-align: left;
+    margin: 0;
+        
+}
+.response-item .name-and-position{
+    text-align: left;
+}
+.response-item .author-info{
+    margin-top: 23px;
+}
+.response-item .author-img{
+    margin-right: 17px;
+}
+.response-item .name{
+    font-weight: 500;
+    color: #4A4A4A;
+    font-size: 16px;
+}
+.responses-wrapper .slide-buttons-container{
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(50%);
+}
+.slide-buttons-container .slide-button{
+    width: 36px;
+    height: 5px;
+    background-color: #A0D334;
+    opacity: .15;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    margin-right: 22px;
+    position: relative;
+}
+.slide-buttons-container .slide-button:last-child{
+    margin-right: 0;
+}
+.slide-buttons-container .slide-button.active,
+.slide-buttons-container .slide-button:hover{
+    opacity: 1;
+}
+.slide-buttons-container .slide-button:before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    top: 50%;
+    transform: translateY (-50%);
 }
 /* END OF MY CLIENTS */
