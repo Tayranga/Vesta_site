@@ -302,35 +302,47 @@ header a:last-child {
 
 /* END OF MY SKILLS */
 
-/* END OF MY PORTFOLIO */
-.my-portfolio{
-    background-color: #fafafa;
-    padding: 220px 0 288px 0;
+/*   MY PORTFOLIO   */
+
+.my-portfolio {
+    background-color: #FAFAFF;
+    padding-top: 220px;
+    padding-bottom: 288px;
 }
-.my-portfolio .container{
+
+.my-portfolio .container {
     text-align: center;
 }
-.my-portfolio p{
+
+.my-portfolio p {
     margin: 20px 0 45px 0;
     color: #4A4A4A;
     line-height: 27px;
 }
-.my-portfolio .tab-item{
+
+.my-portfolio .tab-item {
     font-weight: 500;
     line-height: 27px;
     font-size: 16px;
-    margin-right: 27px;
     color: #4A4A4A;
+    margin-right: 27px;
+    cursor: pointer;
 }
-.my-portfolio .tab-item:last-child{
+
+.my-portfolio .tab-item:hover {
+    color: #A0D334;
+}
+
+.my-portfolio .tab-item:last-child {
     margin-right: 0;
-    
 }
-.my-portfolio .tab-item.active{
+
+.my-portfolio .tab-item.active {
     color: #A0D334;
     position: relative;
 }
-.my-portfolio .tab-item.active:before{
+
+.my-portfolio .tab-item.active:before {
     content: '';
     position: absolute;
     display: inline-block;
@@ -341,13 +353,52 @@ header a:last-child {
     bottom: -4px;
 }
 
-.my-portfolio .web-design-content{
+.my-portfolio .tab-content {
+    margin-top: 95px;
+}
+
+.my-portfolio .web-design-content {
     display: grid;
-    grid-template-columns: repeat(3 370px);
+    grid-template-columns: repeat(3, 370px);
     gap: 30px;
     grid-template-rows: 250px 120px 250px;
 }
-.my-portfolio .grid-item{
-    background-color: red;
+
+.web-design-content .grid-item {
+    position: relative;
 }
-/* END OF MY PORTFOLIO  */
+
+.web-design-content .grid-item:first-child,
+.web-design-content .grid-item:nth-child(3),
+.web-design-content .grid-item:nth-child(4) {
+    grid-row: span 2;
+}
+
+.grid-item-background {
+    position: absolute;
+    background-color: #6048FF;
+    opacity: .3;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*   END OF MY PORTFOLIO   */
+
+/* MY CLIENTS */
+.clients-say {
+    background-color: #FAFAFF;
+    padding-top: 220px;
+    padding-bottom: 288px;
+}
+.clients-say .container {
+    text-align: center;
+}
+
+.clients-say p {
+    margin: 20px 0 45px 0;
+    color: #4A4A4A;
+    line-height: 27px;
+}
+/* END OF MY CLIENTS */

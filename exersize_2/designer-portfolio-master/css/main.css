@@ -1,0 +1,400 @@
+/*   COMMON STYLES   */
+
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+}
+
+.green-button {
+    width: 170px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: #A0D334;
+    color: white;
+    border: none;
+}
+
+.green-button:hover {
+    background-color: rgb(167, 224, 44);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: 700;
+    color: #4a4a4a;
+    font-size: 30px;
+    line-height: 27px;
+}
+
+h3 {
+    font-weight: 500;
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0;
+}
+
+/*  END OF COMMON STYLES   */
+
+/*   FONTS   */
+.roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.montserrat-semi-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/*  END OF FONTS  */
+
+.roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo-name {
+    font-size: 28px;
+    color: #A0D334;
+}
+
+header {
+    position: fixed;
+    height: 55px;
+    top: 23px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    margin-right: 46px;
+    font-size: 14px;
+    text-decoration: unset;
+    color: white;
+}
+
+header a:last-child {
+    margin-right: 0;
+}
+
+.header-button {
+    color: white;
+    height: 55px;
+    width: 170px;
+    border: 1px solid white;
+    line-height: 55px;
+    text-align: center;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #7A39DB99, #6048FF99);
+}
+
+.first-section {
+    height: 900px;
+    background-image: url('../assets/section1_back.png');
+    background-position-x: center;
+    position: relative;
+}
+
+.first-section .container {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.first-section .about-me {
+    position: absolute;
+    top: 30%;
+    right: 129px;
+    color: white;
+}
+
+.first-section .small-text {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.first-section .big-text {
+    font-size: 60px;
+    margin-top: -8px;
+    margin-left: -3px;
+    margin-bottom: -6px;
+}
+
+.first-section .green-button {
+    margin-top: 60px;
+}
+
+.my-services {
+    padding: 33px 0 71px 0;
+}
+
+.my-services .container {
+    align-items: center;
+}
+
+.my-services .service-cards {
+    display: grid;
+    grid-template-columns: 338px 338px;
+    gap: 30px;
+}
+
+.my-services .services-info p {
+    line-height: 27px;
+    color: #6e6e6e;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.my-services .service-card {
+    height: 175px;
+    box-shadow: 0 0 30px rgba(172, 172, 172, .16);
+    padding: 30px;
+}
+
+.my-services .service-card-img-and-header {
+    align-items: center;
+}
+
+.service-card .service-card-img-and-header img {
+    flex: 0 0 35px;
+    margin-right: 20px;
+}
+
+.service-card .service-card-info {
+    margin: 10px 0 0 55px;
+    color: #6E6E6E;
+    line-height: 27px;
+}
+
+.service-card img {
+    border: 1px solid black;
+    height: 34px;
+    width: 35px;
+    display: inline-block;
+}
+
+/*   MY STORY   */
+
+.my-story {
+    justify-content: center;
+    align-items: center;
+    height: 875px;
+    position: relative;
+    background-image: url('../assets/myStory_back.png');
+    background-position-x: center;
+    background-position-y: -66px;
+}
+
+.my-story .story-button-container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.my-story .story-button {
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    margin-bottom: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-story .button-label {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 27px;
+    color: white;
+}
+
+.story-button img {
+    position: relative;
+    left: 3px;
+}
+
+/*   END OF MY STORY   */
+
+/*   MY SKILLS   */
+
+.my-skills .container {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 68px;
+}
+
+.my-skills p {
+    margin: 20px 0 60px 0;
+    color: #4A4A4A;
+    line-height: 27px;
+}
+
+.my-skills .skills-container {
+    justify-content: space-between;
+}
+
+.skill-item .chart {
+    width: 170px;
+    height: 170px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.skill-item .chart.right-aligned {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.skill-item .chart-back {
+    background-image: url('../assets/chart-back.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 230px;
+    height: 230px;
+}
+
+.skill-item .chart-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.skill-item .skill-text {
+    font-weight: 500;
+    color: #4a4a4a;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+/*   END OF MY SKILLS   */
+
+/*   MY PORTFOLIO   */
+
+.my-portfolio {
+    background-color: #FAFAFF;
+    padding-top: 220px;
+    padding-bottom: 288px;
+}
+
+.my-portfolio .container {
+    text-align: center;
+}
+
+.my-portfolio p {
+    margin: 20px 0 45px 0;
+    color: #4A4A4A;
+    line-height: 27px;
+}
+
+.my-portfolio .tab-item {
+    font-weight: 500;
+    line-height: 27px;
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-right: 27px;
+    cursor: pointer;
+}
+
+.my-portfolio .tab-item:hover {
+    color: #A0D334;
+}
+
+.my-portfolio .tab-item:last-child {
+    margin-right: 0;
+}
+
+.my-portfolio .tab-item.active {
+    color: #A0D334;
+    position: relative;
+}
+
+.my-portfolio .tab-item.active:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 43px;
+    height: 1px;
+    background-color: #A0D334;
+    left: 0;
+    bottom: -4px;
+}
+
+.my-portfolio .tab-content {
+    margin-top: 95px;
+}
+
+.my-portfolio .web-design-content {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 30px;
+    grid-template-rows: 250px 120px 250px;
+}
+
+.web-design-content .grid-item {
+    position: relative;
+}
+
+.web-design-content .grid-item:first-child,
+.web-design-content .grid-item:nth-child(3),
+.web-design-content .grid-item:nth-child(4) {
+    grid-row: span 2;
+}
+
+.grid-item-background {
+    position: absolute;
+    background-color: #6048FF;
+    opacity: .3;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*   END OF MY PORTFOLIO   */
