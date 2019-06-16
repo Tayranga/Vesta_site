@@ -374,8 +374,8 @@ h3{
     background-color:#3B1B10;
     height: 88px;
     justify-content: space-between;
-    align-items: center;
-    /* padding-top: 8px; */
+    align-items: baseline;
+    padding-top: 8px;
 }
 .footer_right{
     flex-direction: column;
@@ -385,16 +385,23 @@ h3{
 .sosial_links{
     align-items: center;
 }
+.sosial_links p{
+    margin-right: 8px;
+}
 .footer_right .tel_disp,p{
     margin: 0;
     line-height: 26px;
 }
-.footer_right img{
+.footer_right .social_img{
     width: 22px;
     height: 22px;
+    margin: 0;
+}
+.footer_right a{
     margin: 0 7px;
 }
-.footer_right img:last-child{
+
+.footer_right a:last-child{
     margin-right: 0;
 }
 .footer_left a:first-child{
