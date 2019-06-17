@@ -1,8 +1,9 @@
 /*   COMMON STYLES   */
 
 body {
-    margin: 0;
     font-size: 14px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 button {
@@ -42,6 +43,10 @@ h3 {
     font-size: 16px;
     line-height: 27px;
     margin: 0;
+}
+
+.mobile-only {
+    display: none;
 }
 
 /*  END OF COMMON STYLES   */
@@ -84,7 +89,7 @@ header {
     top: 23px;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 header .container {
@@ -205,13 +210,6 @@ header a:last-child {
     line-height: 27px;
 }
 
-.service-card img {
-    border: 1px solid black;
-    height: 34px;
-    width: 35px;
-    display: inline-block;
-}
-
 /*   MY STORY   */
 
 .my-story {
@@ -222,6 +220,35 @@ header a:last-child {
     background-image: url('../assets/myStory_back.png');
     background-position-x: center;
     background-position-y: -66px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+
+.my-story:before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    transform: translateX(-50%) translateY(-50%) rotateZ(-7deg);
+    left: 50%;
+    top: 0;
+    width: 120%;
+    height: 250px;
+    z-index: 2;
+}
+
+.my-story:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    transform: translateX(-50%) translateY(50%) rotateZ(-7deg);
+    left: 50%;
+    bottom: 0;
+    width: 120%;
+    height: 250px;
+    z-index: 2;
 }
 
 .my-story .story-button-container {
@@ -398,3 +425,101 @@ header a:last-child {
 }
 
 /*   END OF MY PORTFOLIO   */
+
+/*   WHAT MY CLIENTS SAY */
+
+.clients-say .container {
+    text-align: center;
+}
+
+.clients-say .section-description {
+    margin: 20px 0 0 0;
+    color: #4A4A4A;
+    line-height: 27px;
+}
+
+.clients-say .responses-wrapper-wrapper {
+    position: relative;
+}
+
+.clients-say .responses-wrapper {
+    overflow: hidden;
+    padding-top: 64px;
+    padding-bottom: 175px;
+}
+
+.clients-say .responses-container {
+    transition: all .7s;
+}
+
+.clients-say .response-item {
+    width: 370px;
+    height: 222px;
+    color: #6E6E6E;
+    padding: 30px 30px 35px 30px;
+    box-shadow: 0 0 30px rgba(172, 172, 172, .16);
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.clients-say .response-item p {
+    line-height: 19px;
+    margin: 0;
+    text-align: left;
+}
+
+.response-item .author-info {
+    margin-top: 23px;
+    align-items: center;
+}
+
+.response-item .author-img {
+    margin-right: 17px;
+}
+
+.response-item .name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+.responses-wrapper .slide-buttons-container {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.responses-wrapper .slide-button {
+    width: 36px;
+    height: 5px;
+    background-color: #A0D334;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.15;
+    margin-right: 22px;
+    position: relative;
+}
+
+.responses-wrapper .slide-button.active,
+.responses-wrapper .slide-button:hover {
+    opacity: 1;
+}
+
+.responses-wrapper .slide-button:last-child {
+    margin-right: 0;
+}
+
+.responses-wrapper .slide-button:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*   END OF WHAT MY CLIENTS SAY   */
+

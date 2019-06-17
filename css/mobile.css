@@ -1,0 +1,46 @@
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 900px){
+    /* НУЖНО УБРАТЬ */
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .main, .main_bl, .second_bl{
+        overflow: hidden;
+    }
+    /* НУЖНО УБРАТЬ */
+
+    .mobile-only {
+        display: unset;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main_nav{
+        justify-content: space-between;
+        position: fixed;
+        width: 100vw;
+    }
+    .left_side{
+        background-color: unset;
+    }
+    .main_sentence{
+        padding-left: 10px;
+        color: #fff;
+    }
+}

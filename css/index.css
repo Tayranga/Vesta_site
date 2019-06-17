@@ -256,11 +256,12 @@ h3{
     
 }
 .main_links{
-    padding-left: 120px;
+    margin-left: 120px;
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+ 
 }
 .main_links h2{
     margin-top: 54px;
@@ -276,6 +277,7 @@ h3{
     min-height: 88px;
     background-color: rgba(215, 193, 185, 0.5);
     border-radius: 4px 0 0 4px;
+    /* max-width: 510px; */
 }
 
 .right_side{

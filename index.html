@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
     <div class="main">
-        <div class="main_head flex-container container">
+        <header>
+        <div class="main_head flex-container container desktop-only ">
             <div class="main_head_left flex-container">
                 <p class="tel_disp">Диспетчер +7 (132) 456-82-92</p>
                 <button class="master_call button_main" >Вызвать мастера</button>
@@ -26,7 +29,8 @@
         </div>
         <div class="main_nav container">
             <div class="logo_block">VESTA</div>
-            <div class="navigation">
+            <!-- СВОЙСТВО desktop-only ТУТ ВРЕМЕННО! УБРАТЬ ЕГО! -->
+            <div class="navigation desktop-only"> 
                 <a href="html/houses.html">Выбрать дом</a>
                 <a href="html/Services.html">Услуги</a>
                 <a href="html/company.html">О компании</a>
@@ -34,13 +38,20 @@
                 <a href="html/contacts.html">Контакты</a>
                 <a href="html/faq.html">Частые вопросы</a>
             </div>
+            <button class="hamburger hamburger--spin mobile-only" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
             
         </div>
+        </header>
+        
         <div class="main_bl ">
             <div class="left_side ">
                 <div class="main_sentence">
                     <h1>Ваш дом — <br> наша забота!</h1>
-                    <p class="sentence lead">Мы — команда профессионалов <br>
+                    <p class="sentence lead desktop-only">Мы — команда профессионалов <br>
                         с богатым опытом в сфере <br>
                         обслуживания недвижимости. </p>
                     <div class="graph_link">
@@ -49,7 +60,7 @@
                     </div>    
                 </div>
                 <div class="main_links">
-                    <h2 class="link_bl_text">Наши возможности:</h2>
+                    <div class="link_bl_text"><h2 >Наши возможности:</h2></div> 
                     <div class="link_bl flex_container"  id="lk_link">
                                 <!-- <h4>ссылка на ЛК</h4> -->
                         <h3>Личный кабинет</h3>
@@ -67,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right_side">
+            <div class="right_side desktop-only">
                 <div class="right_anchor">
                     <h2 class="right_anchor_article white_text without_margins">Мы предоставляем <br> дополнительные платные услуги</h2>
                     <p class="right_anchor_text p_m white_text without_margins">Узнайте о них подробнее</p>

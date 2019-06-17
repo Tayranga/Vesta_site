@@ -1,0 +1,119 @@
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 900px) {  
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    section {
+        overflow: hidden;
+    }
+
+    /*  ----------------------------    */
+
+    .mobile-only {
+        display: unset;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .green-button {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        padding-right: 0;
+    }
+
+    .header-button {
+        height: 44px;
+        width: 110px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+
+    header nav {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        display: none !important;
+    }
+
+    .logo-name {
+        font-size: 26px;
+    }
+
+    /*   FIRST SECTION   */
+
+    .first-section {
+        height: 100vh;
+        background-size: auto 100%;
+        background-position-x: 20%;
+    }
+
+    .first-section .about-me {
+        top: 40%;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+
+    /*   END OF FIRST SECTION   */
+    /*   MY SERVICES SECTION   */
+
+    .my-services .container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .my-services .services-info p {
+        margin: 35px 0;
+    }
+
+    .my-services .green-button {
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .my-services .service-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .my-services .service-card {
+        height: 160px;
+        padding: 20px;
+    }
+
+    .service-card .service-card-info {
+        margin-left: 0;
+    }
+
+    /*   END OF MY SERVICES SECTION   */
+}
