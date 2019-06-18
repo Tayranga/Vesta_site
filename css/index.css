@@ -374,7 +374,7 @@ h3{
 /* FOOTER */
 .footer {
     background-color:#3B1B10;
-    height: 88px;
+    min-height: 88px;
     justify-content: space-between;
     align-items: baseline;
     padding-top: 8px;
