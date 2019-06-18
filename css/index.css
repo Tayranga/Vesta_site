@@ -23,16 +23,37 @@ body{
 .margin_40{
     margin: 0 120px;
 }
-.graph_link{
+.graph_link a{
     display: flex;
     flex-direction: row;
     align-content: baseline;
+    color: #245372;
+    text-decoration: none;
 }
-.graph_link img{
-    height: 24px;
-    width: 24px;
+.graph_link a.white_text{
     color: #ffffff;
 }
+.graph_link svg{
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-top: 2px;
+}
+
+.graph_link .link_svg_white path{
+    fill: #ffffff;
+}
+.graph_link svg path{
+    fill: #245372;
+}
+.graph_link:hover a{
+    color: #0678C4;
+}
+.graph_link:hover svg path{
+    fill: #0678C4;
+}
+
+
 button{
     cursor: pointer;
     box-shadow: none;
@@ -61,6 +82,7 @@ button{
     padding-left: 120px;
     padding-right: 120px;
 }
+
 /* END OF COMMON STYLES */
 
 /* TEXT STYLES */
@@ -112,6 +134,7 @@ h3{
     font-weight: 500;
     line-height: 26px;
     text-decoration: none;
+    color: #245372;
 }
 .white_text{
     color: #ffffff;
@@ -255,6 +278,14 @@ h3{
     flex: 1 1 50%;
     
 }
+.main_sentence .graph_link{
+    margin-top: 24px;
+}
+.main_sentence .graph_link svg{
+    height: 36px;
+    width: 36px;
+    margin-top: -2px;
+}
 .main_links{
     margin-left: 120px;
     flex: 1 1 50%;
@@ -326,6 +357,7 @@ h3{
     color: #3B1B10;
     margin-top: 24px;
 }
+
 .card_container{
     justify-content: center;
     display: grid;

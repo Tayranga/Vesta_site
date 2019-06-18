@@ -5,6 +5,9 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     background-color: #fff;
 }
+.mobile-only {
+    display: none;
+}
 
 @media screen and (max-width: 900px){
     /* НУЖНО УБРАТЬ */
