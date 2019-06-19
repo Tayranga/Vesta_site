@@ -11,14 +11,14 @@
 
 @media screen and (max-width: 900px){
     /* НУЖНО УБРАТЬ */
-    body {
+    /* body {
         width: 100vw;
         overflow-x: hidden;
     }
 
     .main, .main_bl, .second_bl{
         overflow: hidden;
-    }
+    } */
     /* НУЖНО УБРАТЬ */
 
     .mobile-only {
@@ -41,10 +41,11 @@
     }
     .main_bl{
         min-height: auto;
-        height: 88vh;
-        background-size: auto 100%;
+        /* height: 88vh; */
+        background-size: auto 80vh;
         background-position-x: 95%;
         background-position-y: 62px;
+        background-repeat: no-repeat;
     }
     .left_side{
         background-color: unset;
@@ -54,6 +55,26 @@
         padding-top: 55vh;
         padding-left: 10px;
         color: #fff;
+    }
+    .main_links{
+        
+        margin-left: 0px;
+        margin-top: 4vh;
+        justify-content: flex-start;
+    }
+    .link_bl_text{
+        width: 100vw;
+        text-align: center;
+    }
+    .link_bl_cards{
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+    .link_bl{
+        margin: 10px;
+        border-radius: 4px;
+        width: 224px;
     }
 
     .second_bl_article{
